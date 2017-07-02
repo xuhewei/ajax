@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	var jsonObject={
+		"name":"aaaa",
+		"age":12,
+		"address":{"city":"beijing","school":"chaoyang"},
+		"teaching":function(){
+			alert("javaee,android---");
+		}
+	};
+		alert(jsonObject.age);
+		alert(jsonObject.name);
+		alert(jsonObject.address.city);
+		
+		jsonObject.teaching();
+		
+		var jsonStr="{'name':'bbb'}";
+		//alert(jsonStr.name);
+		//把一个字符串转为json对象 
+		//使用eval()方法
+		var testStr="alert('hello kitty')";
+		alert(testStr);
+		//eval可以把一个字符串转为本地的js代码执行
+		eval(testStr);
+		
+		var testObject=eval("("+jsonStr+")");
+		alert(testObject.name);
+</script>
+</head>
+<body>
+
+</body>
+</html>
